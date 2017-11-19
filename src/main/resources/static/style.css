@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Bitter&subset=latin-ext');
+
+h1{
+background: #0050FB;
+color: white;
+font-family: 'Roboto Slab', serif;
+width: 384px;
+padding: 10px;
+font-size: 50px;
+}
+
+.h1-after{
+width:1000px;
+}
+
+p{
+font-family: 'Rubik', sans-serif;
+color: white;
+font-size: 20px;
+}
+
+.text-box {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+	border: solid;
+	padding: 10px;
+	border: 2px solid #04CDC7;
+	height: 30px;
+	transition: border-color 0.3s;
+    margin-right: 9px;
+    border-radius: 4px;
+    background: transparent;
+    color: white;
+}
+
+.text-box:focus {
+	border-color: #0050FB;
+	outline: none;
+}
+
+.button2{
+border: solid;
+margin: 10px;
+padding: 13px;
+border: 2px solid #04CDC7;
+background: transparent;
+font-family: 'Rubik', sans-serif;
+border-radius: 4px;
+color: #04CDC7;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+transition: border 0.3s, color 0.3s;
+}
+
+body{
+background: url(bg.jpg);
+background-repeat: no-repeat;
+}
+
+.button2:hover{
+border: 2px solid #0050FB;
+color: #0050FB;
+}
+
+.main{
+margin-top: 250px;
+display: none;
+}
+
+.main2{
+margin-top: 50px;
+display: none;
+}
+
+.btn{
+display: none;
+}
+
+.label{
+border: 2px solid #04CDC7;
+border-radius: 4px;
+background: transparent;
+padding: 5px;
+width: 300px;
+}

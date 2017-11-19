@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GeoLocation</title>
+    <link th:href="@{style.css}" href="../static/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+
+        $("document").ready(function($) {
+               $(".main2").delay(100).show("fade",1000);
+               $(".btn").delay(500).show("fade",1000);
+ });
+    </script>
+</head>
+<body>
+<center class="main2">
+<h1 class="h1-after">Your geographical coordinates and map</h1>
+<p class="label" th:text="'Latitude: ' + ${location.lat}" />
+<p class="label" th:text="'Longitude: ' + ${location.lng}" />
+    <iframe
+            width="700"
+            height="550"
+            frameborder="0" style="border:0"
+            th:src="${url}" allowfullscreen>
+    </iframe>
+</center>
+<center class="btn">
+    <a class="button2" href="/">New location</a>
+</center>
+</body>
+</html>
+

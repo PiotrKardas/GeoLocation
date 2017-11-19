@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GeoLocation</title>
+    <link th:href="@{style.css}" href="../static/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+
+        $("document").ready(function($) {
+               $(".main").delay(100).show("fade",1000);
+ });
+    </script>
+</head>
+<body>
+<center class="main">
+<h1>GeoLocation</h1>
+<p>Adress example: Warszawa Prosta 49</p>
+<form action="/result" method="get">
+    <input class="text-box" type="text" name="address" required>
+    <input class="button2" type="submit" value="Show">
+</form>
+</center>
+</body>
+</html>
